@@ -7,13 +7,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
+@Builder
 @NoArgsConstructor
 public class PostsSaveRequestDto {
 
     private String title;
     private String content;
 
-    @Builder
     public PostsSaveRequestDto(String title, String content) {
         this.title = title;
         this.content = content;
